@@ -1,16 +1,37 @@
 # lihat_film
 
-A new Flutter project.
+Sebuah aplikasi untuk menampilkan data film populer, mendatang dan sedang dimulai.
 
-## Getting Started
+## Cara Menjalakan
 
-This project is a starting point for a Flutter application.
+1. Generate terlebih dahulu
 
-A few resources to get you started if this is your first Flutter project:
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2. Jalankan
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+flutter run
+```
+
+## Persyaratan
+- Flutter 2 (Null Safety)
+- Dart 2.12
+
+## Packages yang digunakan
+- cached_network_image
+- dartz
+- dio
+- freezed
+- freezed_annotation
+- get
+- json_annotation
+- json_serializable
+- build_runner
+
+## Tangkapan Layar
+![Alt text](/screenshots/photo1.jpg?raw=true "Halaman Utama")
+
+![Alt text](/screenshots/photo2.jpg?raw=true "Halaman Detail")
