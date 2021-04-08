@@ -7,7 +7,10 @@ class SplashPage extends GetWidget<SplashController> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('Lihat Film'),
+        child: Text(
+          'Lihat Film',
+          style: Get.textTheme?.headline4,
+        ),
       ),
     );
   }

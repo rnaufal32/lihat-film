@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:lihat_film/domain/core/failure.dart';
 import 'package:dartz/dartz.dart';
+import 'package:lihat_film/domain/detail/detail_image.dart';
 import 'package:lihat_film/domain/detail/i_detail_facade.dart';
 import 'package:lihat_film/domain/movie/movie.dart';
 
@@ -25,6 +26,16 @@ class DetailFacade implements IDetailFacade {
         return left(Failures.serverUnauthorized(
             message: e.response?.data['status_message']));
       }
+      return left(Failures.serverError());
+    }
+  }
+
+  @override
+  Future<Either<Failures, DetailImageResponse>> images(int id) async {
+    try {
+      final res = await dio.get('movie/$id/images');
+      return right(DetailImageResponse.fromJson(res.data));
+    } on DioError catch (e) {
       return left(Failures.serverError());
     }
   }

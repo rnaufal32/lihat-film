@@ -8,7 +8,7 @@
             "name": "lihat_film",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "debug"
+            "flutterMode": "profile"
         }
     ]
 }

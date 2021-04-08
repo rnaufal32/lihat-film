@@ -17,21 +17,21 @@ class MainPage extends StatelessWidget {
             tabs: [
               Tab(
                 child: Text(
-                  'Popular',
+                  'Populer',
                   style:
                       Get.textTheme?.bodyText1?.copyWith(color: Colors.black),
                 ),
               ),
               Tab(
                 child: Text(
-                  'Upcoming',
+                  'Mendatang',
                   style:
                       Get.textTheme?.bodyText1?.copyWith(color: Colors.black),
                 ),
               ),
               Tab(
                 child: Text(
-                  'Now Playing',
+                  'Sedang dimulai',
                   style:
                       Get.textTheme?.bodyText1?.copyWith(color: Colors.black),
                 ),
